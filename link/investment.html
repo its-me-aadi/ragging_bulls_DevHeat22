@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Investment</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="stylesheets/index.css" rel="stylesheet">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="homepage.html">Earn Easy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#stockline">Stocks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#crypto">Crypto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Stockes image slide -->
+
+  <!-- TradingView Widget BEGIN -->
+  <div id="stockline">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [{
+            "description": "",
+            "proName": "NASDAQ:NDX"
+          },
+          {
+            "description": "",
+            "proName": "NASDAQ:TSLA"
+          },
+          {
+            "description": "",
+            "proName": "NASDAQ:AAPL"
+          },
+          {
+            "description": "",
+            "proName": "NASDAQ:AMZN"
+          },
+          {
+            "description": "",
+            "proName": "NASDAQ:GOOGL"
+          },
+          {
+            "description": "",
+            "proName": "NASDAQ:MSFT"
+          }
+        ],
+        "showSymbolLogo": true,
+        "colorTheme": "light",
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "locale": "in"
+      }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+  <h1>Stocks</h1>
+  <div id="stocks">
+    <a href="https://groww.in/stocks/bajaj-finance-ltd"><img class="mySlides" src="stylesheets/images/bajaj.PNG"></a>
+    <a href="https://groww.in/stocks/reliance-industries-ltd"><img class="mySlides" src="stylesheets/images/reliance.PNG"></a>
+    <a href="https://groww.in/stocks/tata-steel-ltd"><img class="mySlides" src="stylesheets/images/tata.PNG"></a>
+    <a href="https://groww.in/stocks/hdfc-bank-ltd"><img class="mySlides" src="stylesheets/images/hdfc.PNG"></a>
+    <a href="https://groww.in/stocks/adani-enterprises-ltd"><img class="mySlides" src="stylesheets/images/adani.PNG"></a>
+    <a href="https://groww.in/stocks/infosys-ltd"><img class="mySlides" src="stylesheets/images/infosys.PNG"></a>
+  </div>
+
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000);
+    }
+  </script>
+
+  <!-- TradingView Widget BEGIN -->
+  <div class="topstocks">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/stocks-india/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+      {
+        "colorTheme": "light",
+        "dateRange": "12M",
+        "exchange": "BSE",
+        "showChart": true,
+        "locale": "in",
+        "largeChartUrl": "",
+        "isTransparent": false,
+        "showSymbolLogo": false,
+        "showFloatingTooltip": false,
+        "width": "400",
+        "height": "600",
+        "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+        "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+        "gridLineColor": "rgba(240, 243, 250, 0)",
+        "scaleFontColor": "rgba(106, 109, 120, 1)",
+        "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+        "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+        "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+        "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+        "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+      }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+  <div id="crypto">
+    <h1>Crypto</h1>
+  </div>
+
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [{
+            "description": "",
+            "proName": "BINANCE:BTCBUSD"
+          },
+          {
+            "description": "",
+            "proName": "BINANCE:ETHUSDT"
+          },
+          {
+            "description": "",
+            "proName": "BINANCE:BNBUSD"
+          },
+          {
+            "description": "",
+            "proName": "BINANCE:SOLUSDT"
+          },
+          {
+            "description": "",
+            "proName": "POLONIEX:POLUSDT"
+          }
+        ],
+        "showSymbolLogo": true,
+        "colorTheme": "light",
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "locale": "in"
+      }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+      {
+        "width": "1510",
+        "height": "500",
+        "defaultColumn": "overview",
+        "screener_type": "crypto_mkt",
+        "displayCurrency": "USD",
+        "colorTheme": "light",
+        "locale": "in"
+      }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+  <div class="calculator">
+
+      <h1>Calculator</h1>
+      <div class="row">
+        <div class="calculator-column col-lg-4 col-md-6">
+
+          <div class="card">
+            <div class="card-header">
+              <h4 class="calculator-title">SIP Calculator</h4>
+            </div>
+
+            <div class="card-body">
+              <p class="calc-text">SIP Calculator by Groww</p>
+              <a style="text-decoration: none"href="https://groww.in/calculators/sip-calculator"><button type="button" class="btn btn-lg btn-block btn-dark">Groww SIP Calculator</button></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="calculator-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="calculator-title">Futures Calculator</h4>
+            </div>
+
+            <div class="card-body">
+              <p class="calc-text">Futures Calculator by Binance</p>
+              <a style="text-decoration: none"href="https://www.binance.com/en/futures/BTCUSDT_PERPETUAL/calculator"><button type="button" class="btn btn-lg btn-block btn-dark">Binance Futures Calculator</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator-column col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="calculator-title">Options Calculator</h4>
+            </div>
+
+            <div class="card-body">
+              <p class="calc-text">Options Calculator by Zerodha</p>
+              <a style="text-decoration: none"href="https://zerodha.com/tools/black-scholes/"><button type="button" class="btn btn-lg btn-block btn-dark">Options Calculator</button></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+body {
+  background-image: url(https://imgs.search.brave.com/pusspN6OlK-2STgWLMmqyTJv-G5X3FpaZThUUMdvBjU/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9nLmZv/b2xjZG4uY29tL2Vk/aXRvcmlhbC9pbWFn/ZXMvNTE1OTIzL2dl/dHR5LXN0b2NrLW1h/cmtldC1kYXRhLmpw/Zw);
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
+  line-height: 25px;
+}
+.logo {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+section {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  margin-top: 140px;
+  background-color: #040404;
+  border-radius: 10px;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#name {
+  font-size: 28px;
+  font-weight: bolder;
+  position: relative;
+  left: 5px;
+  color: #53cbfb;
+}
+#icon {
+  width: 60px;
+  height: auto;
+  position: relative;
+  right: 3px;
+  bottom: 4px;
+}
+.input-box {
+  border-radius: 10px;
+  margin-left: 20px;
+  width: 360px;
+  height: 40px;
+}
+button {
+  text-align: center;
+  margin-left: 10px;
+  font-size: 21px;
+  width: 380px;
+  height: 40px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: bold;
+}
+#copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: whitesmoke;
+}
+.or {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  font-family: sans-serif;
+  margin-bottom: 0px;
+  color: whitesmoke;
+}
+[type="checkbox"] {
+  margin-left: 20px;
+  width: 17px;
+  height: 17px;
+  color: whitesmoke;
+  text-decoration-color: whitesmoke;
+  position: relative;
+  top: 3.5px;
+}
+em {
+  color: whitesmoke;
+  font-weight: 100px;
+}
+hr {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}

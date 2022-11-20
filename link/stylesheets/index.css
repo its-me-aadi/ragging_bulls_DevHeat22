@@ -1,0 +1,87 @@
+body {
+  font-family: 'Montserrat , sans-serif';
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h4{
+  font-family: 'Montserrat';
+  font-weight: 900;
+  text-align: center;
+}
+
+p {
+  color: grey;
+}
+
+.container-fluid {
+  background-image: linear-gradient(90deg, blue, violet);
+  padding: 1.5% 15%;
+}
+
+/* Navigation Bar */
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: -70px;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.mySlides{
+  width: 120%;
+}
+
+#stocks{
+  width:48%;
+  height: auto;
+  float: left;
+  margin-left: 50px;
+}
+
+#stockline{
+  margin-top: 30px;
+}
+
+.topstocks{
+  float: right;
+  position: relative;
+  top: 43%;
+  margin-right: 50px;
+}
+
+#crypto{
+  margin-top: 650px;
+}
+
+img{
+  opacity: 0.95;
+}
+
+.calc-text{
+  text-align: center;
+}
+
+.card-header{
+  color: white;
+  background-image: linear-gradient(90deg, blue, violet);
+}
+
+.row{
+  margin: 0 0;
+}
